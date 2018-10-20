@@ -47,6 +47,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/mdb.min.css" rel="stylesheet">
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -75,21 +76,21 @@ if(isset($_POST['submit'])){
 	<div class="colorlib-loader"></div>
 	
 	<div id="page">
-	<nav class="colorlib-nav" role="navigation">
-		<div class="top-menu">
+	<nav class="navbar navbar-fixed-top  navbar-dark scrolling-navbar colorlib-nav">
+		<div >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-1">
-						<img src="images/transcrop.png" height="50px" width="50px" class="img-responsive">
+						<img src="images/transcrop.png" height="350px" width="350px" class="img-responsive">
 					</div>
 					<div class="col-md-1">
 						<div id="colorlib-logo"><a href="index.html">SWAN<span>LEGAL.</span></a></div>
 					</div>
 					<div class="col-md-10 text-right menu-1">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="practice.html">Practice Areas</a></li>
-							<li><a href="won.html">Won Cases</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="practice.php">Practice Areas</a></li>
+							<!-- <li><a href="won.html">Won Cases</a></li>
 							<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -98,10 +99,10 @@ if(isset($_POST['submit'])){
 									<li><a href="#">menu 3</a></li>
 									<li><a href="#">menu 4</a></li>
 								</ul>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li class="active"><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Make an Appointment</span></a></li>
+							</li> -->
+							<li><a href="about.php">About</a></li>
+							<!-- <li class="active"><a href="contact.html">Contact</a></li> -->
+							<li class="btn-cta"><a href="#"><span>Contact Us</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -136,10 +137,10 @@ if(isset($_POST['submit'])){
 					<div class="colorlib-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">2nd Floor Kinyara Building, <br> Plot 7/9 2nd Street Industrial Area <br> P. O. Box 34118 Kampala, Uganda.</li>
-							<li class="phone"><a href="tel://256 312 515 518">+256 312 515 518</a></li>
+							<li class="address">1st Floor Kinyara Building, <br> Plot 7/9 2nd Street Industrial Area <br> P. O. Box 37126 Kampala, Uganda.</li>
+							<li class="phone"><a href="#">+256-705-111-459 or +256-772-354-172</a></li>
 							<li class="email"><a href="mailto:info@swanlegal.ug">info@swanlegal.ug</a></li>
-							<li class="url"><a href="#">swanlegal.ug</a></li>
+							<li class="url"><a href="http://www.swanlegal.ug">swanlegal.ug</a></li>
 						</ul>
 					</div>
 
@@ -190,8 +191,8 @@ if(isset($_POST['submit'])){
 	</div>
 	<div id="map" class="colorlib-map"></div>
 
-	<div id="colorlib-consult">
-		<div class="video colorlib-video" style="background-image: url(images/interview-business-tie-manager-professional.jpg);" data-stellar-background-ratio="0.5">
+	<!-- <div id="colorlib-consult">
+		<div class="video colorlib-video" style="background-image: url(images/scalfs.jpg);" data-stellar-background-ratio="0.5">
 		</div>
 		<div class="choose choose-form animate-box">
 			<div class="colorlib-heading">
@@ -199,34 +200,34 @@ if(isset($_POST['submit'])){
 			</div>
 			<form action="#">
 				<div class="row form-group">
-					<div class="col-md-6">
+					<div class="col-md-6"> -->
 						<!-- <label for="fname">First Name</label> -->
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+						<!-- <input type="text" id="fname" class="form-control" placeholder="Your firstname">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6"> -->
 						<!-- <label for="lname">Last Name</label> -->
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+						<!-- <input type="text" id="lname" class="form-control" placeholder="Your lastname">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<!-- <label for="email">Email</label> -->
+						<label for="email">Email</label>
 						<input type="text" id="email" class="form-control" placeholder="Your email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<!-- <label for="subject">Subject</label> -->
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+						 <label for="subject">Subject</label> -->
+						<!-- <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
 					</div>
 				</div>
 
 				<div class="row form-group">
-					<div class="col-md-12">
+					<div class="col-md-12"> -->
 						<!-- <label for="message">Message</label> -->
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<!-- <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
@@ -235,7 +236,7 @@ if(isset($_POST['submit'])){
 
 			</form>	
 		</div>
-	</div>
+	</div> -->
 
 
 	
@@ -243,28 +244,33 @@ if(isset($_POST['submit'])){
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-3 colorlib-widget">
-					<h4>Swan Legal</h4>
-					<p>Ssozi, Wasolo, Alinda-Ikanza, Nagitta</p>
-					<h6>Legal Associates & Advocates</h6>
+					<img src="images/trans.png" height="150px" width="150px" class="img-responsive">
+					
+					<!-- <p>Ssozi, Wasolo, Alinda-Ikanza, Nagitta</p> -->
+					<h3>Legal Associates & Advocates</h3>
+
 				</div>
+				
+
+       
 				<div class="col-md-3 col-md-push-1">
 					<h4>Navigation</h4>
 					<ul class="colorlib-footer-links">
 						<li><a href="#">Home</a></li>
-						<li><a href="#">Practice Areas</a></li>
-						<li><a href="#">Won Cases</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">About us</a></li>
+						<li><a href="practice.php">Our Practice Areas</a></li>
+						<!-- <li><a href="#">Won Cases</a></li> -->
+						<li><a href="contact.php">Contact Us</a></li>
+						<li><a href="about.php">About Us</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-3 col-md-push-1">
 					<h4>Contact Information</h4>
 					<ul class="colorlib-footer-links">
-						<li>2nd Floor Kinyara Building,<br>
+						<li>1st Floor Kinyara Building,<br>
 							Plot 7/9 2nd Street Industrial Area
-							<br>P. O. Box 34118 Kampala, Uganda.</li>
-						<li><a href="tel://256 312 515 518">+256 312 515 518</a></li>
+							<br>P. O. Box 37126 Kampala, Uganda.</li>
+						<li>+256-705-111-459 or +256-772-354-172</li>
 						<li><a href="mailto:info@swanlegal.ug">info@swanlegal.ug</a></li>
 					</ul>
 				</div>
@@ -272,9 +278,8 @@ if(isset($_POST['submit'])){
 				<div class="col-md-3 col-md-push-1">
 					<h4>Opening Hours</h4>
 					<ul class="colorlib-footer-links">
-						<li>Mon - Thu: 9:00 - 21 00</li>
-						<li>Fri 8:00 - 21 00</li>
-						<li>Sat 9:30 - 15: 00</li>
+						<li>Mon - Fri: 8:30am - 5:00pm</li>
+						
 					</ul>
 				</div>
 
