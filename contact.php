@@ -47,6 +47,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/mdb.min.css" rel="stylesheet">
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -56,13 +57,11 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/mdb.css">
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-	
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -70,27 +69,36 @@ if(isset($_POST['submit'])){
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128428783-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-128428783-1');
+	</script>
+
 
 	</head>
-	<body>
+	<body style="background-image: url(images/people-220284_1280.jpg);">
 		
 	<div class="colorlib-loader"></div>
 	
 	<div id="page">
-	<nav class="navbar navbar-fixed-top navbar-dark scrolling-navbar colorlib-nav">
+	<nav class="navbar navbar-fixed-top  navbar-dark scrolling-navbar colorlib-nav">
 		<div >
 			<div class="container">
 				<div class="row">
-					<div class="col-md-1">
+					<div class="col-md-1 menu-1">
 						<img src="images/transcrop.png" height="350px" width="350px" class="img-responsive">
 					</div>
-					<div class="col-md-1">
-						<div id="colorlib-logo"><a href="index.html">SWAN<span>LEGAL.</span></a></div>
+					<div class="col-md-1 menu-1">
+						<div id="colorlib-logo"><a href="index">SWAN<span>LEGAL.</span></a></div>
 					</div>
 					<div class="col-md-10 text-right menu-1">
 						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li><a href="practice.php">Our Practice Areas</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="practice">Practice Areas</a></li>
 							<!-- <li><a href="won.html">Won Cases</a></li>
 							<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
@@ -101,9 +109,9 @@ if(isset($_POST['submit'])){
 									<li><a href="#">menu 4</a></li>
 								</ul>
 							</li> -->
-							<li class="active"><a href="about.html">About Us</a></li>
-							<!-- <li><a href="contact.php">Contact</a></li> -->
-							<li class="btn-cta"><a href="contact.php"><span>Contact Us</span></a></li>
+							<li><a href="about">About</a></li>
+							<!-- <li class="active"><a href="contact.html">Contact</a></li> -->
+							<li class="btn-cta"><a href="contact"><span>Contact Us</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -112,132 +120,135 @@ if(isset($_POST['submit'])){
 		</div>
 	</nav>
 
-	<aside id="colorlib-hero" class="js-fullheight">
+	<!-- <aside id="colorlib-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/nature-3648365.jpg);">
+		   	<li style="background-image: url(images/people-220284_1280.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner desc">
-		   					<h2 class="heading-section">About Us</h2>
-		   					<p class="colorlib-lead">SWAN Legal is a young, vibrant and fresh firm on the Uganda Legal
-								Market. It was borne from a merger of two legal consultancies; WALS
-								Consultancy founded in 2008 and SNW Legal Consultants founded in
-								2011. The firm is a partnership of legal professionals with over 20 years
-								of combined legal experience in general and specialized areas of law from
-								government, corporate, donor, business, non-profit and private sectors.</p>
-		   				</div>
+		   					<h2 class="heading-section">Contact Us</h2> -->
+		   					<!-- <p class="colorlib-lead">Designed with love by the fine folks at <a href="#" target="_blank">Lawfirm</a></p> -->
+		   				<!-- </div>
 		   			</div>
 		   		</div>
 		   	</li>
 		  	</ul>
 	  	</div>
-	</aside>
+	</aside> -->
 	
-
-	<div id="colorlib-about">
+	<div id="colorlib-contact">
 		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
-					<h2>Our Attorneys</h2>
-					<p>We have top quality professionals with sterling qualifications from prestigious institutions
-						and with significant practical experience.</p>
-				</div>
-			</div>
+			<h3 style="padding-top: 100px;">Contact Us</h3>
 			<div class="row">
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<img src="images/white.jpg" alt="Template">
-						<h3>Susan Najjuka Wasolo</h3>
-						<strong class="role">ADVOCATE</strong>
-						<p>LLB(Hons)MUK,Dip. LP LDC</p>
-						<ul class="colorlib-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
+				<div class="col-md-5 col-md-push-1 animate-box">
+					
+					<div class="colorlib-contact-info" style="background-color: #31486F">
+						<!-- <h3>Contact Information</h3> -->
+						<ul>
+							<li class="address">1st Floor Kinyara Building, <br> Plot 7/9 2nd Street Industrial Area <br> P. O. Box 37126 Kampala, Uganda.</li>
+							<li class="phone"><a href="#">+256-705-111-459 or +256-772-354-172</a></li>
+							<li class="email"><a href="mailto:info@swanlegal.ug">info@swanlegal.ug</a></li>
+							<li class="url"><a href="http://www.swanlegal.ug">swanlegal.ug</a></li>
 						</ul>
 					</div>
+
 				</div>
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<img src="images/white.jpg" alt="Template">
-						<h3>Irene Nagitta</h3>
-						<strong class="role">ADVOCATE</strong>
-						<p>LLB(Hons) MUK, Dip. LP LDC</p>
-						<ul class="colorlib-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<img src="images/white.jpg" alt="Template">
-						<h3>Town Clark</h3>
-						<strong class="role">Managing Partner, Attorney</strong>
-						<p>LLB(Hons) MUK, Dip. LP LDC</p>
-						<ul class="colorlib-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
+				<div class="col-md-6 animate-box" style="background-color: #31486F">
+					<h3>Send A Message</h3>
+					<form action="" method="post">
+						<div class="row form-group">
+							<div class="col-md-6">
+								<!-- <label for="fname">First Name</label> -->
+								<input name="first_name" type="text" id="fname" class="form-control" placeholder="Your firstname">
+							</div>
+							<div class="col-md-6">
+								<!-- <label for="lname">Last Name</label> -->
+								<input name="last_name" type="text" id="lname" class="form-control" placeholder="Your lastname">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input name="email" type="text" id="email" class="form-control" placeholder="Your email address">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<input name="subject" type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<input name="submit" type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+
+					</form>		
 				</div>
 			</div>
+			
 		</div>
 	</div>
+	<div class="colorlib-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.755463967088!2d32.60098762961252!3d0.3216150101254659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24b2bab8d3f2585b!2sSwan+Legal!5e0!3m2!1sen!2sug!4v1540981309595" width="1600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 
-	<div id="colorlib-consult">
+	<!-- <div id="colorlib-consult">
 		<div class="video colorlib-video" style="background-image: url(images/scalfs.jpg);" data-stellar-background-ratio="0.5">
 		</div>
 		<div class="choose choose-form animate-box">
 			<div class="colorlib-heading">
 				<h2>Free Legal Consultation</h2>
 			</div>
-			<form action="" method="post">
+			<form action="#">
 				<div class="row form-group">
-					<div class="col-md-6">
+					<div class="col-md-6"> -->
 						<!-- <label for="fname">First Name</label> -->
-						<input name="first_name" type="text" id="fname" class="form-control" placeholder="Your firstname">
+						<!-- <input type="text" id="fname" class="form-control" placeholder="Your firstname">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6"> -->
 						<!-- <label for="lname">Last Name</label> -->
-						<input name="last_name" type="text" id="lname" class="form-control" placeholder="Your lastname">
+						<!-- <input type="text" id="lname" class="form-control" placeholder="Your lastname">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<!-- <label for="email">Email</label> -->
-						<input name="email" type="text" id="email" class="form-control" placeholder="Your email address">
+						<label for="email">Email</label>
+						<input type="text" id="email" class="form-control" placeholder="Your email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<!-- <label for="subject">Subject</label> -->
-						<input name="subject" type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+						 <label for="subject">Subject</label> -->
+						<!-- <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
 					</div>
 				</div>
 
 				<div class="row form-group">
-					<div class="col-md-12">
+					<div class="col-md-12"> -->
 						<!-- <label for="message">Message</label> -->
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<!-- <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
-					<input name="submit" type="submit" value="Send Message" class="btn btn-primary">
+					<input type="submit" value="Send Message" class="btn btn-primary">
 				</div>
 
 			</form>	
 		</div>
-	</div>
+	</div> -->
 
 
 	
@@ -330,6 +341,9 @@ if(isset($_POST['submit'])){
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 

@@ -69,6 +69,16 @@ if(isset($_POST['submit'])){
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128428783-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-128428783-1');
+	</script>
+
 
 	</head>
 	<body>
@@ -85,12 +95,12 @@ if(isset($_POST['submit'])){
 						<img src="images/transcrop.png" height="350px" width="350px" class="img-responsive">
 					</div>
 					<div class="col-md-1 menu-1">
-						<div id="colorlib-logo"><a href="index.html">Swan<span>Legal.</span></a></div>
+						<div id="colorlib-logo"><a href="index">Swan<span>Legal.</span></a></div>
 					</div>
 					<div class="col-md-10 text-right menu-1" >
 						<ul>
-							<li class="active"><a href="index.php">Home</a></li>
-							<li><a href="practice.php">Our Practice Areas</a></li>
+							<li class="active"><a href="index">Home</a></li>
+							<li><a href="practice">Our Practice Areas</a></li>
 							<!-- <li><a href="won.php">Won Cases</a></li>
 							<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
@@ -101,9 +111,9 @@ if(isset($_POST['submit'])){
 									<li><a href="#">menu 4</a></li>
 								</ul>
 							</li> -->
-							<li><a href="about.php">About Us</a></li>
+							<li><a href="about">About Us</a></li>
 							<!-- <li><a href="contact.php">Contact</a></li> -->
-							<li class="btn-cta"><a href="contact.php"><span>Contact Us</span></a></li>
+							<li class="btn-cta"><a href="contact"><span>Contact Us</span></a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
 						</ul>
 					</div>
@@ -130,7 +140,7 @@ if(isset($_POST['submit'])){
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/nature-3648365.jpg);">
+		   	<li style="background-image: url(images/dogs.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -144,7 +154,7 @@ if(isset($_POST['submit'])){
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/books-2596809_1920.jpg);">
+		   	<li style="background-image: url(images/act.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -259,71 +269,294 @@ Plot 7/9 2nd Street Industrial Area</p>
 							<i class="flaticon-courthouse"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Property & Real Estate Law</a></h3>
-							<p>This includes Acquisitions, Disposals and Leases,Funding and Security </p>
+							<h3><a data-toggle="modal" data-target="#propertyModal">Property & Real Estate Law</a></h3>
+							<!-- <p>This includes Acquisitions, Disposals and Leases,Funding and Security </p> -->
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-padlock"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Corporate & Commercial Law</a></h3>
-							<p>Advice on mergers and acquisitions startups, joint
-								ventures.</p>
+				<!-- Modal -->
+				<div class="modal fade" id="propertyModal" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="propertyModalLabel">PROPERTY AND REAL ESTATE</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p style="text-align: justify;">
+						      		In addition to the general corporate and commercial work that the firm practices, we also offer our clients a more specialized advisory service in commercial Conveyance (Land Transactions)/commercial Transactions <br>
+
+									Our Property services include:-
+ 
+						      	</p>
+						      	<ul>
+						      		<li>Acquisitions, Disposals and Leases</li>
+						      		<li>Funding and Security Documentation and Perfection</li>
+						      		<li>Commercial, Industrial and Residential Development</li>
+						      	</ul>
+						      	<p style="text-align: justify;">
+						      		Swan Legal executes a tremendous amount of conveyancing work which is one of its largest areas of practice. We specialize in all kinds of land transactions including but not limited to; mortgages, charges, purchases, sales, leases, expropriated properties, transfers and all manner of litigation attendant thereto.  
+						      	</p>
+						      	
+						      	<p style="text-align: justify;">
+						      		We also advise foreign and local institutional investors, property developers, and surveyors and do a lot of due diligence work regarding development projects in Uganda.  We also act routinely for construction corporations, and we have acted as property and estate managers for landlords based locally and abroad.
+						      	</p>
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-folder"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Employment</a></h3>
-							<p>We represent employers who want to make the best Human Resource choices</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-handcuffs"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Criminal Representation</a></h3>
-							<p>We represent both complainants on watching briefs and accused persons in
-								defence.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-handcuffs"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Regulatory Investigations</a></h3>
-							<p>We assess and recommend ways to mitigate risk through preventive measures,
-								regulatory audits and by advising on good governance procedures</p>
-						</div>
-					</div>
-				</div>
+					<!-- Modal -->
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
 							<i class="flaticon-libra"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Litigation</a></h3>
-							<p>Banking Litigation and Enforcement of Security,Arbitrations in Building & Engineering Construction</p>
+							<h3><a data-toggle="modal" data-target="#litModal">Litigation</a></h3>
+							<!-- <p>Banking Litigation and Enforcement of Security,Arbitrations in Building & Engineering Construction</p> -->
+						</div>
+					</div>
+					
+					</div>
+									<!-- Modal -->
+				<div class="modal fade" id="corpModal" tabindex="-1" role="dialog" aria-labelledby="corpModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="corpModalLabel">CORPORATE & COMMERCIAL LAW</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p>
+						      		Our corporate work includes advising on mergers and acquisitions startups, joint ventures and regulatory advice. We also have the capability to handle transactional, intellectual property and regulatory advisory work. <br>
+
+									<strong>Corporate Services</strong> include:-
+ 
+						      	</p>
+						      	<ul>
+						      		<li>Mergers, Acquisitions and Disposals</li>
+						      		<li>General corporate, securities and business advice</li>
+						      		<li>Establishing a business in Uganda</li>
+						      		<li>Corporate structuring, and regulatory advice and compliance</li>
+						      	</ul>
+						      	<p>
+						      		<strong>Our Commercial Services</strong> include:-  
+						      	</p>
+						      	<ul>
+						      		<li>Leasing and Finance Agreements</li>
+						      		<li>Agency, Distribution and Licensing Agreements</li>
+						      		<li>Service Contracts, Consultancy Agreements and related Employment matters</li>
+						      		<li>Copyrights, Trademarks and other Intellectual Property matters</li>
+						      	</ul>
+						      	
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+
+				
+				<div class="col-md-4 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="flaticon-folder"></i>
+						</span>
+						<div class="desc">
+							<h3><a data-toggle="modal" data-target="#employmentModal">Employment & Labour Law</a></h3>
+							<!-- <p>Advice on employment contracts, policies and procedures, remuneration and incentive systems, pension funds and social security audits.</p> -->
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="employmentModal" tabindex="-1" role="dialog" aria-labelledby="employmentModal" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="employmentModalLabel">EMPLOYMENT & LABOUR LAW</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p style="text-align: justify;">
+						      		Swan Legal advises corporate and individual clients (both domestic and foreign) on employment contracts, policies and procedures, remuneration and incentive systems, pension funds and social security audits.
+ 
+						      	</p>
+						      	
+						      	<p style="text-align: justify;">
+						      		We prepare and review employment contracts, such as non disclosure, non-compete and confidentiality agreements, and advising on their enforceability. We offer counsel on legal issues running the range from recruitments to terminations, enforcement of post-termination obligations by former employees, non-competition covenants, protection of intellectual property, conducting investigations, compensation disputes.  
+						      	</p>
+						      	
+						      	
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+
+				<div class="col-md-4 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="flaticon-handcuffs"></i>
+						</span>
+						<div class="desc">
+							<h3><a data-toggle="modal" data-target="#criminalModal">Criminal Defense & Domestic Law</a></h3>
+							<!-- <p>We represent both defendants and complainants on holding brief for virtually any type of criminal case in the trial</p> -->
+						</div>
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="criminalModal" tabindex="-1" role="dialog" aria-labelledby="criminalModal" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="criminalModalLabel">CRIMINAL DEFENSE</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p style="text-align: justify;">
+						      		We represent both defendants and complainants on holding brief for virtually any type of criminal case in the trial including but not limited to;<br>
+ 									<strong>Domestic law</strong><br>
+ 									We handle matters related to Trusts and Estates including but not limited to Wills, Succession, Grants of Probate and Letters of Administration, Divorce, Judicial separation, Custody of minors, Maintenance, Management of Estates of Persons of Unsound Mind, Management of Estates of Missing Persons. 
+						      	</p>
+						      	
+						      	<p style="text-align: justify;">
+						      		We also routinely act as Executors, Trustees and Administrators of numerous estates in Uganda advising on how testator's Wills and Estates are to be handled, we arrange for valuation and collection of assets and payment of debts. Our services also include contested probate proceedings.  
+						      	</p>
+						      	<p style="text-align: justify;">
+						      		We handle adoption proceedings particularly for foreign clients carrying out adoptions in accordance with Ugandan law. We also offer assistance with guardianship applications.
+
+						      	</p>
+						      	
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+				<div class="col-md-4 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="flaticon-handcuffs"></i>
+						</span>
+						<div class="desc">
+						<h3><a data-toggle="modal" data-target="#ngoModal">NGO</a></h3>
+							
+						</div>
+					</div>
+				</div>
+								<!-- Modal -->
+				<div class="modal fade" id="ngoModal" tabindex="-1" role="dialog" aria-labelledby="ngoModal" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="ngoModalLabel">NGO (local and foreign) Registration, Governance and Compliance matters
+Regulatory Investigations, Due Diligences and Legal Audits
+</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p style="text-align: justify;">
+						      		The firm routinely executes numerous instructions for Non Governmental Organizations (NGO's) both domestic and international, from their incorporation to raising financing, compliance with the legal and regulatory framework and actual monitoring of their performance and general legal work.<br>
+ 									We aid non profit clients in negotiating important contracts with partners and vendors of all kinds. We provide legal advice on relevant agreements and extensive experience in minimizing tax liability. We also assist with contract termination or enforce contract requirements with vendors, negotiate settlements and release of claims.
+						      	</p>
+						      	
+						      	
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+				<div class="col-md-4 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="flaticon-padlock"></i>
+						</span>
+						<div class="desc">
+							<h3><a data-toggle="modal" data-target="#corpModal">Corporate & Commercial Law</a></h3>
+							<!-- <p>Advice on mergers and acquisitions startups, joint
+								ventures.</p> -->
+						</div>
+					</div>
+				</div>
+												<!-- Modal -->
+				<div class="modal fade" id="litModal" tabindex="-1" role="dialog" aria-labelledby="litModal" aria-hidden="true">
+						  <div class="modal-dialog modal-fluid" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h3 class="modal-title" id="litModalLabel">LITIGATION</h3>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	
+						      	<p style="text-align: justify;">
+						      		We have a successful record in the Courts and credibility in commercial litigation, and mediation ensuring early closure of disputes even before they are filed at the courts. 
+We represent clients and have been engaged in several court cases in insolvency disputes, defective securities claims, asset finance and leasing matters.
+Other areas of dispute resolutions include; commercial agreements, shareholders, company liquidations and employment disputes.
+
+						      	</p>
+						      	<ul>
+						      		<li>Banking Litigation and Enforcement of Security</li>
+						      		<li>Arbitrations in Building & Engineering Construction </li>
+						      		<li>Negligence and other tort claims</li>
+						      		<li>Commercial Debt Recovery</li>
+						      		<li>Enforcing foreign judgments</li>
+						      		<li>Commercial and Contractual Litigation</li>
+						      		<li>Intellectual Property Litigation</li>
+						      	</ul>
+						      	
+						      	
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
 				<div class="col-md-12 text-center animate-box">
-					<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More <i class="icon-arrow-right"></i></a></p>
+					<p><a class="btn btn-primary btn-lg btn-learn" href="practice">View More <i class="icon-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>
@@ -343,7 +576,7 @@ Plot 7/9 2nd Street Industrial Area</p>
 	</div> -->
 	
 
-	<div id="colorlib-testimonial" class="colorlib-bg-section">
+<!-- 	<div id="colorlib-testimonial" class="colorlib-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading">
@@ -392,10 +625,10 @@ Plot 7/9 2nd Street Industrial Area</p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="colorlib-consult">
-		<div class="video colorlib-video" style="background-image: url(images/scalfs.jpg);" data-stellar-background-ratio="0.5">
+		<div class="video colorlib-video" style="background-image: url(images/justice.jpg);" data-stellar-background-ratio="0.5">
 		</div>
 		<div class="choose choose-form animate-box">
 			<div class="colorlib-heading">
@@ -512,17 +745,15 @@ Plot 7/9 2nd Street Industrial Area</p>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="colorlib-staff">
 						<a data-toggle="modal" data-target="#susanModal"><img src="images/susan.jpg" alt="Template"></a>
-						<h3>Mrs. Suzan Najjuka Wasolo </h3>
+						<h3 >Mrs. Suzan Najjuka Wasolo </h3>
 						<strong class="role">ADVOCATE</strong>
 						<p>LLB (Hons), MUK, Dip. L.P LDC</p>
 						<ul class="colorlib-social-icons">
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-mail"></i></a></li>
 							<li><a href="#"><i class="icon-google"></i></a></li>
-							<li><a href="#"><i class="icon-email"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-github"></i></a></li> -->
 						</ul>
-						<!-- Modal -->
-						
 					</div>
 				</div>
 				<!-- Modal -->
@@ -544,7 +775,6 @@ Plot 7/9 2nd Street Industrial Area</p>
 						      	</p>
 						      	<p>
 						      		The most Senior Advocate at the Firm, Suzan boasts of 10 years’ hands-on experience in private legal practice. She holds a Bachelor of Laws (Hons) degree of Makerere University and a Post Graduate Diploma in Legal Practice of Law Development Centre. She enrolled as an Advocate of the High Court in 2002.
-
 						      	</p>
 						      	<ul class="colorlib-social-icons">
 									<li><a href="#"><i class="icon-mail"></i>susannajjuka@gmail.com</a></li>
@@ -570,9 +800,8 @@ Plot 7/9 2nd Street Industrial Area</p>
 						<p>LLB (Hons), MUK, Dip. L.P LDC</p>
 						<ul class="colorlib-social-icons">
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-phone"></i></a></li>
-							<li><a href="#"><i class="icon-emoji-happy"></i></a></li>
+							<li><a href="#"><i class="icon-mail"></i></a></li>
+							<li><a href="#"><i class="icon-google"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -587,7 +816,6 @@ Plot 7/9 2nd Street Industrial Area</p>
 						        </button>
 						      </div>
 						      <div class="modal-body">
-						      	<h4>ADVOCATE</h4>
 						      	<p>
 						      		Ms. Nagitta is a founding partner of SWAN Legal. She heads the Firm’s Business and Investment Department and is responsible for Quality Assurance at the firm.
 						      	</p>
@@ -614,6 +842,74 @@ Plot 7/9 2nd Street Industrial Area</p>
 						  </div>
 						</div>
 					<!-- Modal -->
+				
+					<!-- Modal -->
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="colorlib-staff">
+						<a data-toggle="modal" data-target="#ronaModal"><img src="images/rona.jpg" alt="Template"></a>
+						<h3>Ms. Ssozi Rona </h3>
+						<strong class="role">ADVOCATE</strong>
+						<p>LMM (WSU), LLB (Hons) MUK, Dip L.P, LDC</p>
+						<ul class="colorlib-social-icons">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-mail"></i></a></li>
+							<li><a href="#"><i class="icon-google"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="ronaModal" tabindex="-1" role="dialog" aria-labelledby="ronaModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="ronaModalLabel">Ms. Ssozi Rona</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	<p>
+						      		Ms. Ssozi is a founding partner of SWAN Legal and the Managing Partner of the Firm. Rona holds a Degree from Makerere University. A Post Graduate Diploma in Legal Practice from the Law Development Centre obtained in 2007. She also holds a Master’s Degree (LLM) in Corporate and Finance Law from Wayne State University in the United States. 
+						      	</p>
+						      	<p>
+						      		She has specialized in commercial banking and finance law, corporate finance law, business planning, Securities regulation, mergers and acquisitions, and tax law. She is a legal officer with the Federation of Uganda Employers. 
+						      	</p>
+						      	<p>
+						      		Rona is an enrolled an Attorney and Counselor at Law in New York State, in the United States of America. Rona is an Advocate of the High Court of Uganda and a member of the Uganda Law Society, and East African Law Society.
+						      	</p>
+						      	<ul class="colorlib-social-icons">
+									<li><a href="#"><i class="icon-mail"></i></a></li>
+									<li><a href="#"><i class="icon-mail"></i></a></li>
+									<li><a href="#"><i class="icon-phone"></i></a></li>
+									<li><a href="#"><i class="icon-phone"></i></a></li>
+									<li><a href="#"><i class="icon-emoji-happy"></i></a></li>
+								</ul>
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+			</div>
+		<div class="row">
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="colorlib-staff">
+						<img src="images/white.jpg" alt="Template">
+						<!-- <h3>Mrs. Suzan Najjuka Wasolo </h3>
+						<strong class="role">ADVOCATE</strong>
+						<p>LLB (Hons), MUK, Dip. L.P LDC</p>
+						<ul class="colorlib-social-icons">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul> -->
+					</div>
+				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="colorlib-staff">
 						<a data-toggle="modal" data-target="#musaModal"><img src="images/white.jpg" alt="Template"></a>
@@ -622,10 +918,51 @@ Plot 7/9 2nd Street Industrial Area</p>
 						<p>Diploma in Law, LDC, Diploma in Business Accounting</p>
 						<ul class="colorlib-social-icons">
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
+							<li><a href="#"><i class="icon-mail"></i></a></li>
+							<li><a href="#"><i class="icon-google"></i></a></li>
 						</ul>
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="musaModal" tabindex="-1" role="dialog" aria-labelledby="musaModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="musaModalLabel">MR. MUSA OMAR</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	<h4>LEGAL CLERK & COURT PROCESS SERVER</h4>
+						      	<p>
+						      		Mr. Omar is in charge of the firm’s corporate and land transactional clerical work. He holds a diploma in Law from the Law Development center, and is also a registered court process server with the High Court. 
+						      	</p>
+						      	<p>
+						      		Musa also holds a diploma in business accounting from Ndejje University in Uganda.
+						      	</p>
+						      	
+						      	<ul class="colorlib-social-icons">
+									<li><a href="#"><i class="icon-mail"></i></a></li>
+									<li><a href="#"><i class="icon-mail"></i></a></li>
+									<li><a href="#"><i class="icon-phone"></i></a></li>
+									<li><a href="#"><i class="icon-phone"></i></a></li>
+									<li><a href="#"><i class="icon-emoji-happy"></i></a></li>
+								</ul>
+						        ...
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- Modal -->
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="colorlib-staff">
+						<img src="images/white.jpg" alt="Template">
+						
 					</div>
 				</div>
 			</div>
@@ -697,6 +1034,7 @@ Plot 7/9 2nd Street Industrial Area</p>
 		</div>
 	</footer>
 	</div>
+	
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -723,7 +1061,6 @@ Plot 7/9 2nd Street Industrial Area</p>
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
 
 	</body>
 </html>
